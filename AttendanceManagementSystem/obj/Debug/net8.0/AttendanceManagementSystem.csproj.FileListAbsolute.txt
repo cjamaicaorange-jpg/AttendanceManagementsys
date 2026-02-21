@@ -1,0 +1,4 @@
+C:\BSIT2-2\AttendanceManagementSystem\obj\Debug\net8.0\AttendanceManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\BSIT2-2\AttendanceManagementSystem\obj\Debug\net8.0\AttendanceManagementSystem.AssemblyInfoInputs.cache
+C:\BSIT2-2\AttendanceManagementSystem\obj\Debug\net8.0\AttendanceManagementSystem.AssemblyInfo.cs
+C:\BSIT2-2\AttendanceManagementSystem\obj\Debug\net8.0\AttendanceManagementSystem.csproj.CoreCompileInputs.cache
