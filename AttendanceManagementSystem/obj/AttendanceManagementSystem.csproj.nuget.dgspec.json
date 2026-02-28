@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BSIT2-2\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj": {}
+    "C:\\Users\\PUP-CITE-L1PC09\\Documents\\Visual Studio 2022\\Castillo210226actII\\Castillo210226actII\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\BSIT2-2\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj": {
+    "C:\\Users\\PUP-CITE-L1PC09\\Documents\\Visual Studio 2022\\Castillo210226actII\\Castillo210226actII\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BSIT2-2\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\PUP-CITE-L1PC09\\Documents\\Visual Studio 2022\\Castillo210226actII\\Castillo210226actII\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
         "projectName": "AttendanceManagementSystem",
-        "projectPath": "C:\\BSIT2-2\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\PUP-CITE-L1PC15\\.nuget\\packages\\",
-        "outputPath": "C:\\BSIT2-2\\AttendanceManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\PUP-CITE-L1PC09\\Documents\\Visual Studio 2022\\Castillo210226actII\\Castillo210226actII\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\PUP-CITE-L1PC09\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PUP-CITE-L1PC09\\Documents\\Visual Studio 2022\\Castillo210226actII\\Castillo210226actII\\AttendanceManagementsys\\AttendanceManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PUP-CITE-L1PC15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PUP-CITE-L1PC09\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
