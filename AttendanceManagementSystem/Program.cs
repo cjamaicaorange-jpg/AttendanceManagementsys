@@ -11,6 +11,11 @@ public class AttendanceManagementSystem
 
         char[,] attendance = new char[5, 4];
         
+
+        string[] day = { "monday","tuesday", "wednesday", "thursday", "saturday" };
+
+        char[,] attendance = new char[5, 4];
+
         while (true)
         {
             Console.WriteLine("\n1. Record Attendance");
