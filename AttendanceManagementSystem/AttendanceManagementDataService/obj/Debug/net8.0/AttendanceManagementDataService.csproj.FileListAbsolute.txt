@@ -1,0 +1,16 @@
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\bin\Debug\net8.0\AttendanceManagementDataService.deps.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\bin\Debug\net8.0\AttendanceManagementDataService.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\bin\Debug\net8.0\AttendanceManagementDataService.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\bin\Debug\net8.0\AttendanceManagementModels.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\bin\Debug\net8.0\AttendanceManagementModels.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.csproj.AssemblyReference.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.AssemblyInfoInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.AssemblyInfo.cs
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.csproj.CoreCompileInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.sourcelink.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\Attendan.A6F37318.Up2Date
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\refint\AttendanceManagementDataService.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\AttendanceManagementDataService.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementDataService\obj\Debug\net8.0\ref\AttendanceManagementDataService.dll

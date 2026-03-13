@@ -1,102 +1,93 @@
 ﻿using System;
+using AttendanceManagementAppService;
+using AttendanceManagementModels;
 
-public class AttendanceManagementSystem
+namespace AttendanceManagementSystem
 {
-    static public void Main()
+    class Program
     {
-        Console.WriteLine("ATTENDANCE MANAGEMENT SYSTEM");
+        static AttendanceAppService attendanceAppService = new AttendanceAppService();
 
-        string[] studentname = { "rapsing", "dela cruz", "tolarba", "malang", "casallos" };
-        string[] day = { "monday", "tuesday", "wednesday", "thursday", "saturday" };
-
-        char[,] attendance = new char[5, 4];
-        
-
-        string[] day = { "monday","tuesday", "wednesday", "thursday", "saturday" };
-
-        char[,] attendance = new char[5, 4];
-
-        while (true)
+        static void Main(string[] args)
         {
-            Console.WriteLine("\n1. Record Attendance");
-            Console.WriteLine("2. View Record");
-            Console.WriteLine("3. Exit");
-            Console.Write("Choose: ");
+            Console.WriteLine("ATTENDANCE MANAGEMENT SYSTEM");
 
-            int choose = Convert.ToInt32(Console.ReadLine());
+         
 
-            switch (choose)
+            while (true)
             {
-                case 1:
-                    Console.Write("Enter student name: ");
-                    string studentInput = Console.ReadLine().ToLower();
+                ShowMenu();
 
-                    Console.Write("Enter day: ");
-                    string dayInput = Console.ReadLine().ToLower();
+                string option = Console.ReadLine();
 
-                    int studentIndex = Array.IndexOf(studentname, studentInput);
-                    int dayIndex = Array.IndexOf(day, dayInput);
-
-                    if (studentIndex == -1 || dayIndex == -1)
-                    {
-                        Console.WriteLine("Invalid student name or day.");
+                switch (option)
+                {
+                    case "1":
+                        RecordAttendance();
                         break;
-                    }
 
-                    Console.Write("Type 'p' for present or 'a' for absent: ");
-                    char status = Console.ReadLine().ToLower()[0];
-
-                    if (status == 'p' || status == 'a')
-                    {
-                        attendance[studentIndex, dayIndex] = status;
-                        Console.WriteLine("Attendance Recorded Successfully!");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid status input.");
-                    }
-
-                    break;
-
-                case 2:
-                    Console.Write("Enter student name to view record: ");
-                    string viewStudent = Console.ReadLine().ToLower();
-
-                    int viewIndex = Array.IndexOf(studentname, viewStudent);
-
-                    if (viewIndex == -1)
-                    {
-                        Console.WriteLine("Student not found.");
+                    case "2":
+                        ViewAttendance();
                         break;
-                    }
 
-                    Console.WriteLine("\nAttendance record for " + studentname[viewIndex] + ":");
+                    case "3":
+                        Environment.Exit(0);
+                        break;
 
-                    for (int j = 0; j < day.Length; j++)
-                    {
-                        if (attendance[viewIndex, j] == 'p')
-                        {
-                            Console.WriteLine(day[j] + " - PRESENT");
-                        }
-                        else if (attendance[viewIndex, j] == 'a')
-                        {
-                            Console.WriteLine(day[j] + " - ABSENT");
-                        }
-                        else
-                        {
-                            Console.WriteLine(day[j] + " - No record");
-                        }
-                    }
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+        }
 
-                    break;
+        static void ShowMenu()
+        {
+            Console.WriteLine("\n------ MENU ------");
+            Console.WriteLine("[1] Record Attendance");
+            Console.WriteLine("[2] View Attendance");
+            Console.WriteLine("[3] Exit");
+            Console.Write("Choose option: ");
+        }
 
-                case 3:
-                    Environment.Exit(0);
-                    break;
+        static void RecordAttendance()
+        {
+            Console.Write("Enter Student Name: ");
+            string name = Console.ReadLine();
 
-                default:
-                    Console.WriteLine("Invalid choice.");
-                    break;
+            Console.Write("Enter Day: ");
+            string day = Console.ReadLine();
+
+            Console.Write("Enter Status (p = present, a = absent): ");
+            string status = Console.ReadLine();
+
+            attendanceAppService.AddRecord(name, day, status);
+
+            Console.WriteLine("Attendance recorded successfully.");
+        }
+
+        static void ViewAttendance()
+        {
+            var records = attendanceAppService.GetAttendance();
+
+            Console.WriteLine("\n------ ATTENDANCE RECORDS ------");
+
+            if (records.Count == 0)
+            {
+                Console.WriteLine("No records found.");
+                return;
+            }
+
+            foreach (AttendanceItems item in records)
+            {
+                string statusText = "";
+
+                if (item.Status.ToLower() == "p")
+                    statusText = "Present";
+                else if (item.Status.ToLower() == "a")
+                    statusText = "Absent";
+
+                Console.WriteLine($"Student: {item.StudentName} | Day: {item.Day} | Status: {statusText}");
             }
         }
     }

@@ -7,4 +7,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="AttendanceManagementAppService\**" />
+    <Compile Remove="AttendanceManagementDataService\**" />
+    <Compile Remove="AttendanceManagementModels\**" />
+    <EmbeddedResource Remove="AttendanceManagementAppService\**" />
+    <EmbeddedResource Remove="AttendanceManagementDataService\**" />
+    <EmbeddedResource Remove="AttendanceManagementModels\**" />
+    <None Remove="AttendanceManagementAppService\**" />
+    <None Remove="AttendanceManagementDataService\**" />
+    <None Remove="AttendanceManagementModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="AttendanceManagementAppService\AttendanceManagementAppService.csproj" />
+    <ProjectReference Include="AttendanceManagementModels\AttendanceManagementModels.csproj" />
+  </ItemGroup>
+
 </Project>

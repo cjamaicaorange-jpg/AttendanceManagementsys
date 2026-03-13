@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AttendanceManagementAppService/1.0.0": {
+        "dependencies": {
+          "AttendanceManagementDataService": "1.0.0",
+          "AttendanceManagementModels": "1.0.0"
+        },
+        "runtime": {
+          "AttendanceManagementAppService.dll": {}
+        }
+      },
+      "AttendanceManagementDataService/1.0.0": {
+        "dependencies": {
+          "AttendanceManagementModels": "1.0.0"
+        },
+        "runtime": {
+          "AttendanceManagementDataService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AttendanceManagementModels/1.0.0": {
+        "runtime": {
+          "AttendanceManagementModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AttendanceManagementAppService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AttendanceManagementDataService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AttendanceManagementModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.deps.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.AssemblyInfoInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.AssemblyInfo.cs
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.sourcelink.json
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\refint\AttendanceManagementModels.dll
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.pdb
+C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\ref\AttendanceManagementModels.dll
