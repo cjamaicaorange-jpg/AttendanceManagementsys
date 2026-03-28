@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj",
         "projectName": "AttendanceManagementAppService",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\AttendanceManagementAppService.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementAppService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj"
+              "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
+                "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj"
               },
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
+              "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
+                "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
               }
             }
           }
@@ -51,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -72,24 +72,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
         "projectName": "AttendanceManagementDataService",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
-                "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
+              "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
+                "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
               }
             }
           }
@@ -120,11 +120,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -141,24 +147,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
         "projectName": "AttendanceManagementModels",
-        "projectPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
-        "packagesPath": "C:\\Users\\Raul Alvarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Alvarez\\OneDrive\\Documents\\GitHub\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Documents\\CASALLOS\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Raul Alvarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -185,11 +191,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -206,7 +218,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

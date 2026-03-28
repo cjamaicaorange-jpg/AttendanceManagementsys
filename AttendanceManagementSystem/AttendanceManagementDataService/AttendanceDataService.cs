@@ -1,21 +1,31 @@
-﻿using System.Collections.Generic;
-using AttendanceManagementModels;
+﻿using AttendanceManagementModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace AttendanceManagementDataService
 {
     public class AttendanceDataService
+
     {
-        public List<AttendanceItems> records = new List<AttendanceItems>();
-
-        public void AddAttendance(AttendanceItems record)
+        IAttendance dataService;
+        public AttendanceDataService(IAttendance attendancedataService)
         {
-            records.Add(record);
+            dataService = attendancedataService;
         }
-
+        public void Add(AttendanceItems attendanceitems)
+        {
+            dataService.Add(attendanceitems);
+        }
         public List<AttendanceItems> GetAttendance()
         {
-            return records;
+            return dataService.GetAttendance();
         }
-
+        public bool checkStatus(string status)
+        {
+            return dataService.checkStatus(status);
+        }
     }
-    
 }

@@ -1,0 +1,12 @@
+[
+  {
+    "StudentName": "Rubie",
+    "Day": "Saturday",
+    "Status": "Absent"
+  },
+  {
+    "StudentName": "Thea",
+    "Day": "Wednesday",
+    "Status": "P"
+  }
+]

@@ -10,3 +10,16 @@ C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\Attendan
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\refint\AttendanceManagementModels.dll
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.pdb
 C:\Users\Raul Alvarez\OneDrive\Documents\GitHub\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\ref\AttendanceManagementModels.dll
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.deps.json
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.dll
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\bin\Debug\net8.0\AttendanceManagementModels.pdb
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.sourcelink.json
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.dll
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\refint\AttendanceManagementModels.dll
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\AttendanceManagementModels.pdb
+C:\Users\Admin\OneDrive\Documents\CASALLOS\AttendanceManagementsys\AttendanceManagementSystem\AttendanceManagementModels\obj\Debug\net8.0\ref\AttendanceManagementModels.dll

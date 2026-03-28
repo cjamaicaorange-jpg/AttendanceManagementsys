@@ -4,7 +4,9 @@ namespace AttendanceManagementAppService
 {
     public class AttendanceAppService
     {
-        AttendanceDataService attendancedataservice = new AttendanceDataService();
+        //  InMemorydata attendancedataservice = new InMemorydata();
+        AttendanceDataService attendancedataservice = new AttendanceDataService(new AttendanceManagementDBData());
+        AttendanceJSONData attendanceJsonData = new AttendanceJSONData(); 
 
         public void AddRecord(string studName, string date, string status) {
             
@@ -20,8 +22,10 @@ namespace AttendanceManagementAppService
                 Day = date,
                 Status = status
             };
-            attendancedataservice.AddAttendance(record);
-            
+            //   attendancedataservice.AddAttendance(record);
+            attendancedataservice.Add(record);
+            attendanceJsonData.Add(record);
+
         }
         public List<AttendanceItems> GetAttendance()
         {
