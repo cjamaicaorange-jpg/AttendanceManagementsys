@@ -72,6 +72,48 @@ namespace AttendanceManagementModels
             sqlConnection.Close();
             return attendanceitems;
         }
+
+        public void UpdateRecord (string name, string day, string status)
+        {
+            string selectStatement = "SELECT StudentName, Day, Status FROM tbl_Attendance";
+            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
+            sqlConnection.Open();
+            SqlDataReader reader = selectCommand.ExecuteReader();
+            var attendanceitems = new List<AttendanceItems>();
+            while (reader.Read())
+            {
+                AttendanceItems Att = new AttendanceItems();
+                Att.StudentName = reader["StudentName"].ToString();
+                Att.Day = reader["Day"].ToString();
+                Att.Status = reader["Status"].ToString();
+
+                attendanceitems.Add(Att);
+            }
+            sqlConnection.Close();
+            return attendanceitems;
+        }
+
+        public void DeleteRecord(string name)
+        {
+            string selectStatement = "DELETE StudentName FROM tbl_Attendance";
+            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
+          //  deleteCommand.Parameters.AddWithValue("@name", name);
+
+            sqlConnection.Open();
+            SqlDataReader reader = selectCommand.ExecuteReader();
+            var attendanceitems = new List<AttendanceItems>();
+            
+            while (reader.Read())
+            {
+                AttendanceItems Att = new AttendanceItems();
+                Att.StudentName = reader["StudentName"].ToString();
+               
+
+                attendanceitems.Add(Att);
+            }
+            sqlConnection.Close();
+            return attendanceitems;
+        }
         public bool checkStatus(string status)
         {
             var selectStatement = "SELECT StudentName,Day,Status FROM tbl_Attendance WHERE Status = @Status";

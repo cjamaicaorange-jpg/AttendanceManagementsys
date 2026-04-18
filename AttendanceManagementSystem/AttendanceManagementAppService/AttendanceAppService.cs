@@ -27,6 +27,39 @@ namespace AttendanceManagementAppService
             attendanceJsonData.Add(record);
 
         }
+        public void UpdateRecord(string name, string day, string status)
+        {
+            var attendanceList = attendancedataservice.GetAttendance();
+
+            var record = attendanceList.Find(x => x.StudentName == name);
+
+            if (record != null)
+            {
+                record.Day = day;
+                record.Status = status;
+            }
+            else
+            {
+                Console.WriteLine("Record not found.");
+            }
+        }
+
+        public void DeleteRecord(string name)
+{
+            var attendanceList = attendancedataservice.GetAttendance();
+
+            var record = attendanceList.Find(x => x.StudentName == name);
+
+            if (record != null)
+            {
+                attendanceList.Remove(record);
+                Console.Write("Record deleted.");
+            }
+            else
+            {
+                Console.WriteLine("Record not found.");
+            }
+}
         public List<AttendanceItems> GetAttendance()
         {
             return attendancedataservice.GetAttendance();

@@ -31,6 +31,18 @@ namespace AttendanceManagementSystem
                         break;
 
                     case "3":
+                        EditAttendance();
+                        break;
+
+                    case "4":
+                        DeleteAttendance();
+                        break;
+
+                    case "5":
+                        AttendanceReports();
+                        break;
+
+                    case "6":
                         Environment.Exit(0);
                         break;
 
@@ -46,7 +58,10 @@ namespace AttendanceManagementSystem
             Console.WriteLine("\n------ MENU ------");
             Console.WriteLine("[1] Record Attendance");
             Console.WriteLine("[2] View Attendance");
-            Console.WriteLine("[3] Exit");
+            Console.WriteLine("[3] Edit Attendance");
+            Console.WriteLine("[4] Delete Attendance");
+            Console.WriteLine("[5] Attendance Reports");
+            Console.WriteLine("[6] Exit");
             Console.Write("Choose option: ");
         }
 
@@ -89,6 +104,56 @@ namespace AttendanceManagementSystem
 
                 Console.WriteLine($"Student: {item.StudentName} | Day: {item.Day} | Status: {statusText}");
             }
+        }
+
+        static void EditAttendance()
+        {
+            ViewAttendance();
+
+            Console.Write("\nEnter Student Name to edit: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter new Day: ");
+            string newDay = Console.ReadLine();
+
+            Console.Write("Enter new Status (p = present, a = absent): ");
+            string newStatus = Console.ReadLine();
+
+            attendanceAppService.UpdateRecord(name, newDay, newStatus);
+
+            Console.WriteLine("Attendance updated successfully.");
+        }
+        static void DeleteAttendance()
+        {
+            ViewAttendance();
+
+            Console.Write("\nEnter Student Name to delete: ");
+            string name = Console.ReadLine();
+
+            attendanceAppService.DeleteRecord(name);
+
+            Console.WriteLine("Attendance record deleted successfully.");
+        }
+
+        static void AttendanceReports()
+        {
+            var records = attendanceAppService.GetAttendance();
+
+            int totalPresent = 0;
+            int totalAbsent = 0;
+
+            foreach (AttendanceItems item in records)
+            {
+                if (item.Status.ToLower() == "p")
+                    totalPresent++;
+
+                else if (item.Status.ToLower() == "a")
+                    totalAbsent++;
+            }
+
+            Console.WriteLine("\n------ ATTENDANCE REPORT ------");
+            Console.WriteLine($"Total Present: {totalPresent}");
+            Console.WriteLine($"Total Absent: {totalAbsent}");
         }
     }
 }

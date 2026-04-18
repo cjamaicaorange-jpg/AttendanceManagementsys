@@ -10,6 +10,10 @@ namespace AttendanceManagementDataService
         {
             records.Add(record);
         }
+        public void UpdateRecord(AttendanceItems record)
+        {
+            records.Add(record);
+        }
 
         public List<AttendanceItems> GetAttendance()
         {
