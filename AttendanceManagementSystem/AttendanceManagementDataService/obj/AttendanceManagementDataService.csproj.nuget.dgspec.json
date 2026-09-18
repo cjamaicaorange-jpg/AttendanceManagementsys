@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {}
+    "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
+    "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
+        "projectUniqueName": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
         "projectName": "AttendanceManagementDataService",
-        "projectPath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
+        "projectPath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\AttendanceManagementDataService.csproj",
         "packagesPath": "C:\\Users\\Ron\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\obj\\",
+        "outputPath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementDataService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,10 +30,11 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
-                "projectPath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
+              "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
+                "projectPath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj"
               }
             }
           }
@@ -52,6 +53,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.Data.SqlClient": {
@@ -79,14 +81,14 @@
         }
       }
     },
-    "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
+    "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
+        "projectUniqueName": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
         "projectName": "AttendanceManagementModels",
-        "projectPath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
+        "projectPath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\AttendanceManagementModels.csproj",
         "packagesPath": "C:\\Users\\Ron\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\obj\\",
+        "outputPath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -105,6 +107,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -123,6 +126,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.Data.SqlClient": {

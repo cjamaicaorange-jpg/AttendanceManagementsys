@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iSy+nfLqvoE=",
+  "dgSpecHash": "KbuEdvDx2f8=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\Ron\\Downloads\\kjj\\AttendanceManagementsys\\AttendanceManagementSystem\\AttendanceManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ron\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\Ron\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.0\\microsoft.data.sqlclient.7.0.0.nupkg.sha512",
