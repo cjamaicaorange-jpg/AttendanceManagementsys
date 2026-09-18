@@ -1,9 +1,5 @@
 ﻿using AttendanceManagementModels;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AttendanceManagementDataService
 {
@@ -12,5 +8,7 @@ namespace AttendanceManagementDataService
         void Add(AttendanceItems attendanceitems);
         List<AttendanceItems> GetAttendance();
         bool checkStatus(string status);
+        void Update(string name, string day, string status);
+        void Delete(string studentName);
     }
 }

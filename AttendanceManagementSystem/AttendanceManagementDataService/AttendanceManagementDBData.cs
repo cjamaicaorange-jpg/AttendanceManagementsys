@@ -1,10 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AttendanceManagementModels;
 using AttendanceManagementDataService;
 
@@ -13,126 +9,100 @@ namespace AttendanceManagementModels
     public class AttendanceManagementDBData : IAttendance
     {
         private string connectionString
-            = "Data Source = localhost\\SQLEXPRESS; Initial Catalog = db_Attendance; Integrated Security = True; TrustServerCertificate=True;";
-
-        private SqlConnection sqlConnection;
+            = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=db_Attendance; Integrated Security=True; TrustServerCertificate=True;";
 
         public AttendanceManagementDBData()
         {
-            sqlConnection = new SqlConnection(connectionString);
             AddSeeds();
         }
+
         private void AddSeeds()
         {
             var existing = GetAttendance();
             if (existing.Count == 0)
             {
-                AttendanceItems attendanceCheck = new AttendanceItems
+                Add(new AttendanceItems
                 {
                     StudentName = "Rubie",
                     Day = "Saturday",
-                    Status = "Absent"
-                };
-                Add(attendanceCheck);
+                    Status = "a"
+                });
             }
         }
 
         public void Add(AttendanceItems attend)
         {
-            var insertStatement = "INSERT INTO tbl_Attendance VALUES (@StudentName,@Day,@Status)";
-            SqlCommand insertCommand = new SqlCommand(insertStatement, sqlConnection);
+            var insertStatement = "INSERT INTO tbl_Attendance (StudentName, Day, Status) VALUES (@StudentName, @Day, @Status)";
+            using var connection = new SqlConnection(connectionString);
+            using var insertCommand = new SqlCommand(insertStatement, connection);
 
             insertCommand.Parameters.AddWithValue("@StudentName", attend.StudentName);
             insertCommand.Parameters.AddWithValue("@Day", attend.Day);
             insertCommand.Parameters.AddWithValue("@Status", attend.Status);
-            sqlConnection.Open();
 
+            connection.Open();
             insertCommand.ExecuteNonQuery();
-
-            sqlConnection.Close();
-
         }
 
         public List<AttendanceItems> GetAttendance()
         {
             string selectStatement = "SELECT StudentName, Day, Status FROM tbl_Attendance";
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
-            sqlConnection.Open();
-            SqlDataReader reader = selectCommand.ExecuteReader();
+            using var connection = new SqlConnection(connectionString);
+            using var selectCommand = new SqlCommand(selectStatement, connection);
+
+            connection.Open();
+            using var reader = selectCommand.ExecuteReader();
+
             var attendanceitems = new List<AttendanceItems>();
             while (reader.Read())
             {
-                AttendanceItems Att = new AttendanceItems();
-                Att.StudentName = reader["StudentName"].ToString();
-                Att.Day = reader["Day"].ToString();
-                Att.Status = reader["Status"].ToString();
-
-                attendanceitems.Add(Att);
+                attendanceitems.Add(new AttendanceItems
+                {
+                    StudentName = reader["StudentName"].ToString() ?? string.Empty,
+                    Day = reader["Day"].ToString() ?? string.Empty,
+                    Status = reader["Status"].ToString() ?? string.Empty
+                });
             }
-            sqlConnection.Close();
             return attendanceitems;
         }
 
-        public void UpdateRecord (string name, string day, string status)
+        public void Update(string name, string day, string status)
         {
-            string selectStatement = "SELECT StudentName, Day, Status FROM tbl_Attendance";
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
-            sqlConnection.Open();
-            SqlDataReader reader = selectCommand.ExecuteReader();
-            var attendanceitems = new List<AttendanceItems>();
-            while (reader.Read())
-            {
-                AttendanceItems Att = new AttendanceItems();
-                Att.StudentName = reader["StudentName"].ToString();
-                Att.Day = reader["Day"].ToString();
-                Att.Status = reader["Status"].ToString();
+            string updateStatement = "UPDATE tbl_Attendance SET Day = @Day, Status = @Status WHERE StudentName = @Name";
+            using var connection = new SqlConnection(connectionString);
+            using var updateCommand = new SqlCommand(updateStatement, connection);
 
-                attendanceitems.Add(Att);
-            }
-            sqlConnection.Close();
-            return attendanceitems;
+            updateCommand.Parameters.AddWithValue("@Name", name);
+            updateCommand.Parameters.AddWithValue("@Day", day);
+            updateCommand.Parameters.AddWithValue("@Status", status);
+
+            connection.Open();
+            updateCommand.ExecuteNonQuery();
         }
 
-        public void DeleteRecord(string name)
+        public void Delete(string studentName)
         {
-            string selectStatement = "DELETE StudentName FROM tbl_Attendance";
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
-          //  deleteCommand.Parameters.AddWithValue("@name", name);
+            string deleteStatement = "DELETE FROM tbl_Attendance WHERE StudentName = @Name";
+            using var connection = new SqlConnection(connectionString);
+            using var deleteCommand = new SqlCommand(deleteStatement, connection);
 
-            sqlConnection.Open();
-            SqlDataReader reader = selectCommand.ExecuteReader();
-            var attendanceitems = new List<AttendanceItems>();
-            
-            while (reader.Read())
-            {
-                AttendanceItems Att = new AttendanceItems();
-                Att.StudentName = reader["StudentName"].ToString();
-               
+            deleteCommand.Parameters.AddWithValue("@Name", studentName);
 
-                attendanceitems.Add(Att);
-            }
-            sqlConnection.Close();
-            return attendanceitems;
+            connection.Open();
+            deleteCommand.ExecuteNonQuery();
         }
+
         public bool checkStatus(string status)
         {
-            var selectStatement = "SELECT StudentName,Day,Status FROM tbl_Attendance WHERE Status = @Status";
-            SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
+            var selectStatement = "SELECT COUNT(*) FROM tbl_Attendance WHERE Status = @Status";
+            using var connection = new SqlConnection(connectionString);
+            using var selectCommand = new SqlCommand(selectStatement, connection);
+
             selectCommand.Parameters.AddWithValue("@Status", status);
-            sqlConnection.Open();
-            SqlDataReader reader = selectCommand.ExecuteReader();
 
-            var attendanceitems = new AttendanceItems();
-
-            while (reader.Read())
-            {
-                attendanceitems.StudentName = reader["StudentName"].ToString();
-                attendanceitems.Day = reader["Day"].ToString();
-                attendanceitems.Status = reader["Status"].ToString();
-            }
-            sqlConnection.Close();
-            return attendanceitems.Status != null;
+            connection.Open();
+            int count = (int)selectCommand.ExecuteScalar();
+            return count > 0;
         }
     }
 }
-

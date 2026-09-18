@@ -1,18 +1,20 @@
 ﻿using AttendanceManagementDataService;
 using AttendanceManagementModels;
+using System;
+using System.Collections.Generic;
+
 namespace AttendanceManagementAppService
 {
     public class AttendanceAppService
     {
-        //  InMemorydata attendancedataservice = new InMemorydata();
-        AttendanceDataService attendancedataservice = new AttendanceDataService(new AttendanceManagementDBData());
-        AttendanceJSONData attendanceJsonData = new AttendanceJSONData(); 
+        private readonly AttendanceDataService attendancedataservice =
+            new AttendanceDataService(new AttendanceManagementDBData());
 
-        public void AddRecord(string studName, string date, string status) {
-            
-            if (!checkStatus(status))
+        public void AddRecord(string studName, string date, string status)
+        {
+            if (!IsValidStatus(status))
             {
-                Console.WriteLine("Invalid status.");
+                Console.WriteLine("Invalid status. Use 'p' for Present or 'a' for Absent.");
                 return;
             }
 
@@ -20,63 +22,37 @@ namespace AttendanceManagementAppService
             {
                 StudentName = studName,
                 Day = date,
-                Status = status
+                Status = status.ToLower()
             };
-            //   attendancedataservice.AddAttendance(record);
-            attendancedataservice.Add(record);
-            attendanceJsonData.Add(record);
 
+            attendancedataservice.Add(record);
         }
+
         public void UpdateRecord(string name, string day, string status)
         {
-            var attendanceList = attendancedataservice.GetAttendance();
-
-            var record = attendanceList.Find(x => x.StudentName == name);
-
-            if (record != null)
+            if (!IsValidStatus(status))
             {
-                record.Day = day;
-                record.Status = status;
+                Console.WriteLine("Invalid status. Use 'p' for Present or 'a' for Absent.");
+                return;
             }
-            else
-            {
-                Console.WriteLine("Record not found.");
-            }
+
+            attendancedataservice.Update(name, day, status.ToLower());
         }
 
         public void DeleteRecord(string name)
-{
-            var attendanceList = attendancedataservice.GetAttendance();
+        {
+            attendancedataservice.Delete(name);
+        }
 
-            var record = attendanceList.Find(x => x.StudentName == name);
-
-            if (record != null)
-            {
-                attendanceList.Remove(record);
-                Console.Write("Record deleted.");
-            }
-            else
-            {
-                Console.WriteLine("Record not found.");
-            }
-}
         public List<AttendanceItems> GetAttendance()
         {
             return attendancedataservice.GetAttendance();
         }
-        bool checkStatus(string status)
-        {
-            status = status.ToLower();
 
-            if (status == "p" || status == "a")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+        private bool IsValidStatus(string status)
+        {
+            var s = status.ToLower();
+            return s == "p" || s == "a";
         }
     }
 }
-

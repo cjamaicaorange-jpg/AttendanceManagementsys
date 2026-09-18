@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AttendanceManagementAppService;
 using AttendanceManagementModels;
 
@@ -12,40 +13,32 @@ namespace AttendanceManagementSystem
         {
             Console.WriteLine("ATTENDANCE MANAGEMENT SYSTEM");
 
-         
-
             while (true)
             {
                 ShowMenu();
 
-                string option = Console.ReadLine();
+                string option = Console.ReadLine() ?? string.Empty;
 
                 switch (option)
                 {
                     case "1":
                         RecordAttendance();
                         break;
-
                     case "2":
                         ViewAttendance();
                         break;
-
                     case "3":
                         EditAttendance();
                         break;
-
                     case "4":
                         DeleteAttendance();
                         break;
-
                     case "5":
                         AttendanceReports();
                         break;
-
                     case "6":
                         Environment.Exit(0);
                         break;
-
                     default:
                         Console.WriteLine("Invalid choice.");
                         break;
@@ -68,16 +61,15 @@ namespace AttendanceManagementSystem
         static void RecordAttendance()
         {
             Console.Write("Enter Student Name: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Enter Day: ");
-            string day = Console.ReadLine();
+            string day = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Enter Status (p = present, a = absent): ");
-            string status = Console.ReadLine();
+            string status = Console.ReadLine() ?? string.Empty;
 
             attendanceAppService.AddRecord(name, day, status);
-
             Console.WriteLine("Attendance recorded successfully.");
         }
 
@@ -95,12 +87,9 @@ namespace AttendanceManagementSystem
 
             foreach (AttendanceItems item in records)
             {
-                string statusText = "";
-
-                if (item.Status.ToLower() == "p")
-                    statusText = "Present";
-                else if (item.Status.ToLower() == "a")
-                    statusText = "Absent";
+                string statusText = item.Status.ToLower() == "p" ? "Present"
+                                  : item.Status.ToLower() == "a" ? "Absent"
+                                  : item.Status;
 
                 Console.WriteLine($"Student: {item.StudentName} | Day: {item.Day} | Status: {statusText}");
             }
@@ -111,27 +100,44 @@ namespace AttendanceManagementSystem
             ViewAttendance();
 
             Console.Write("\nEnter Student Name to edit: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
+
+            // Check the record exists before prompting for new values
+            var records = attendanceAppService.GetAttendance();
+            var existing = records.Find(x => x.StudentName.Equals(name, StringComparison.OrdinalIgnoreCase));
+            if (existing == null)
+            {
+                Console.WriteLine("Record not found.");
+                return;
+            }
 
             Console.Write("Enter new Day: ");
-            string newDay = Console.ReadLine();
+            string newDay = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Enter new Status (p = present, a = absent): ");
-            string newStatus = Console.ReadLine();
+            string newStatus = Console.ReadLine() ?? string.Empty;
 
             attendanceAppService.UpdateRecord(name, newDay, newStatus);
-
             Console.WriteLine("Attendance updated successfully.");
         }
+
         static void DeleteAttendance()
         {
             ViewAttendance();
 
             Console.Write("\nEnter Student Name to delete: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
+
+            // Check the record exists before deleting
+            var records = attendanceAppService.GetAttendance();
+            var existing = records.Find(x => x.StudentName.Equals(name, StringComparison.OrdinalIgnoreCase));
+            if (existing == null)
+            {
+                Console.WriteLine("Record not found.");
+                return;
+            }
 
             attendanceAppService.DeleteRecord(name);
-
             Console.WriteLine("Attendance record deleted successfully.");
         }
 
@@ -146,14 +152,14 @@ namespace AttendanceManagementSystem
             {
                 if (item.Status.ToLower() == "p")
                     totalPresent++;
-
                 else if (item.Status.ToLower() == "a")
                     totalAbsent++;
             }
 
             Console.WriteLine("\n------ ATTENDANCE REPORT ------");
-            Console.WriteLine($"Total Present: {totalPresent}");
-            Console.WriteLine($"Total Absent: {totalAbsent}");
+            Console.WriteLine($"Total Present:  {totalPresent}");
+            Console.WriteLine($"Total Absent:   {totalAbsent}");
+            Console.WriteLine($"Total Records:  {records.Count}");
         }
     }
 }
