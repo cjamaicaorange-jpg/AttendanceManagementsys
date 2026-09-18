@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using AttendanceManagementAppService;
 using AttendanceManagementModels;
+using Microsoft.Extensions.Configuration;
 
 namespace AttendanceManagementSystem
 {
     class Program
     {
-        static AttendanceAppService attendanceAppService = new AttendanceAppService();
+        static AttendanceAppService attendanceAppService = null!;
 
         static void Main(string[] args)
         {
+            // Load appsettings.json
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: false)
+                .Build();
+
+            attendanceAppService = new AttendanceAppService(configuration);
+
             Console.WriteLine("ATTENDANCE MANAGEMENT SYSTEM");
 
             while (true)
@@ -102,7 +111,6 @@ namespace AttendanceManagementSystem
             Console.Write("\nEnter Student Name to edit: ");
             string name = Console.ReadLine() ?? string.Empty;
 
-            // Check the record exists before prompting for new values
             var records = attendanceAppService.GetAttendance();
             var existing = records.Find(x => x.StudentName.Equals(name, StringComparison.OrdinalIgnoreCase));
             if (existing == null)
@@ -128,7 +136,6 @@ namespace AttendanceManagementSystem
             Console.Write("\nEnter Student Name to delete: ");
             string name = Console.ReadLine() ?? string.Empty;
 
-            // Check the record exists before deleting
             var records = attendanceAppService.GetAttendance();
             var existing = records.Find(x => x.StudentName.Equals(name, StringComparison.OrdinalIgnoreCase));
             if (existing == null)

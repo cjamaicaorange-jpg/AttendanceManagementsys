@@ -11,4 +11,9 @@
     <ProjectReference Include="..\AttendanceManagementModels\AttendanceManagementModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.9.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+  </ItemGroup>
+
 </Project>

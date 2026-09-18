@@ -58,6 +58,16 @@
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -282,6 +292,12 @@
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
